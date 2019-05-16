@@ -38,42 +38,45 @@
                     <i slot="prepend" class="fa fa-keyboard-o"></i>
                   </el-input>
                 </el-form-item>
-                <el-form-item prop="code">
+                <!-- 验证码功能 -->
+                <!-- <el-form-item prop="code">
                   <el-input type="text" v-model="formLogin.code" placeholder="- - - -">
                     <template slot="prepend">验证码</template>
                     <template slot="append">
                       <img class="login-code" src="./image/login-code.png">
                     </template>
                   </el-input>
-                </el-form-item>
+                </el-form-item> -->
                 <el-button size="default" @click="submit" type="primary" class="button-login">登录</el-button>
               </el-form>
             </el-card>
-            <p
+            <!-- 忘记用户与注册用户 -->
+            <!-- <p
               class="page-login--options"
               flex="main:justify cross:center">
               <span><d2-icon name="question-circle"/> 忘记密码</span>
               <span>注册用户</span>
-            </p>
+            </p> -->
             <!-- 快速登录按钮 -->
-            <el-button class="page-login--quick" size="default" type="info" @click="dialogVisible = true">
+            <!-- <el-button class="page-login--quick" size="default" type="info" @click="dialogVisible = true">
               快速选择用户（测试功能）
-            </el-button>
+            </el-button> -->
           </div>
         </div>
         <div class="page-login--content-footer">
-          <p class="page-login--content-footer-options">
+          <!-- 授权信息 -->
+          <!-- <p class="page-login--content-footer-options">
             <a href="#">帮助</a>
             <a href="#">隐私</a>
             <a href="#">条款</a>
           </p>
           <p class="page-login--content-footer-copyright">
-            Copyright <d2-icon name="copyright"/> 2018 D2 Projects 开源组织出品 <a href="https://github.com/FairyEver">@FairyEver</a>
-          </p>
+            Copyright <d2-icon name="copyright"/> 2018 D2 Projects 开源组织出品 <a href="#">@FairyEver</a>
+          </p> -->
         </div>
       </div>
     </div>
-    <el-dialog
+    <!-- <el-dialog
       title="快速选择用户"
       :visible.sync="dialogVisible"
       width="400px">
@@ -85,7 +88,7 @@
           </div>
         </el-col>
       </el-row>
-    </el-dialog>
+    </el-dialog> -->
   </div>
 </template>
 
